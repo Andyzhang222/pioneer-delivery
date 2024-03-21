@@ -1,0 +1,1179 @@
+body, html {
+    width: 100%;
+    width: 1600px;
+    overflow-x: hidden; /* 禁止页面宽度超出屏幕 */
+}
+
+.title {
+    width: 100%;
+    height: 100px;
+    /* min-width: 1200px; */
+    position: fixed; 
+    top: 0;
+    z-index: 99; 
+}
+
+.title-c {
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner {
+    /* width: 1600px; */
+
+    /* padding-left: 10px; */
+   
+    width: 100%;
+    /* min-width: 1200px; */
+    height: 910px;
+
+
+
+    /* background-image: linear-gradient(#FF8C42, #F8E6D0); */
+
+    background-image: linear-gradient(#F8E6D0, #F8E6D0);
+
+
+    /* background-image: linear-gradient(#F8E6D0 , #F8E6D0); */
+    /* background-image: linear-gradient(#eb6538,#f29c52); */
+}
+.logo {
+    height: 100px;
+    line-height: 100px;
+}
+
+.nav-li {
+    /* line-height: 100px; */
+    font-size: 15px;
+   
+    color: black;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a{
+    color: black;
+    display: flex;
+}
+
+.nav-li a {
+   
+    color: black;
+    font-size: 20px;
+    font-family: San Francisco;
+    /* display: block; */
+    padding: 7px 30px;
+    margin-left: 53px;
+    border-radius: 5px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.nav-li.nav-bottom a {
+    /* background: #fff; */
+    font-family: San Francisco;
+    color: black;
+    font-size: 20px;
+}
+.banner-b {
+    width: 100%;
+    height: 910px;
+    background: 1;
+}
+
+.banner-c {
+    width: 1200px;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+.banner-left {
+
+    margin-top: -20%;
+    margin-left: -60px;
+   
+    color: black;
+    /* color: #fff; */
+    width: 690px;
+}
+
+.banner-left p, .banner-left-a img {
+    opacity: 0;  /* 初始化透明度为0 */
+    animation-name: fadeInUp;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+p.banner-left-p1 {
+    animation-delay: 0.25s; 
+    padding-top: 300px;
+    font-size: 70px;
+    font-weight: 100;
+    font-family: San Francisco;
+    padding-bottom: 30px;
+}
+
+
+
+p.banner-left-p2 {
+    animation-delay: 0.50s;
+    font-size: 70px;
+    font-family: San Francisco;
+    line-height: 50px;
+}
+
+p.banner-left-p3 {
+    animation-delay: 0.75s;
+    font-size: 50px;
+    font-family: San Francisco;
+    padding-bottom: 30px;
+}
+
+
+
+
+p.banner-left-p4 {
+    animation-delay: 1s;
+    font-size: 50px;
+    line-height: 50px;
+    font-family: San Francisco;
+    padding-bottom: 20px;
+}
+
+
+.banner-left-a {
+    display: flex;       /* 使用flex布局 */
+    justify-content: space-between;  
+   
+}
+
+.banner-left-a img:first-child {
+    animation-delay: 1.25s;
+}
+
+.banner-left-a img:last-child {
+    animation-delay: 1.25s;
+}
+
+.app-download-img {
+    width: 100px;
+    height: auto;
+    margin: 15px;  
+}
+
+.banner-download{
+    display: flex;
+}
+
+.banner-download a{
+    margin-right: 25px;
+}
+
+
+
+
+
+
+
+
+.banner-right-round {
+    width: 510px;
+    height: 510px;
+    position: absolute;
+    background: #ffe3b8;
+    border-radius: 510px;
+    top: 122px;
+    display: none;
+}
+
+.adjusted-img {
+    position:fixed;
+   width: max-content;
+    height: auto; /* 根据宽度等比例调整高度 */
+  
+  }
+
+.banner-right {
+    position: relative;
+}
+
+
+
+img {
+    position: relative;
+    vertical-align: middle;
+    z-index: 3;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* serves */
+
+
+.service-section {
+    font-family: San Francisco;
+    /* padding-top: 20px; */
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 80px; */
+
+    /* background-color: #323232; */
+    padding-bottom: 80px;
+  
+   
+   
+}
+
+.service {
+    flex: 0 0 calc(33.33% - 20px);
+    text-align: center;
+}
+
+.service h2{
+
+    margin-top: -45px;
+
+}
+
+
+
+.service p {
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+.service img {
+    width: 250px;
+    height: 250px;
+   
+    /* margin-bottom: 10px; */
+}
+
+.service h2 {
+    font-size: 24px;
+    font-weight: bold; /* 添加加粗样式 */
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: black;
+    
+}
+
+.service a {
+   
+    z-index: 10;
+
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    color:#eb6538;; /* 蓝色链接颜色 */
+    text-decoration: none;
+    /* background-color: #333; */
+}
+
+
+
+/* serves动画特效 */
+
+@keyframes slideFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.service-section .service {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s; 
+}
+
+.show-service {
+    animation: slideFromBottom 1s forwards;
+}
+
+
+
+/* serves download */
+
+
+.download-link .learn-more-text {
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.download-link .download-options {
+
+    
+    margin-left: 130px;
+    margin-top: -48px;
+    padding-bottom: 15px;
+  
+    /* background:gold; */
+  
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: relative;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.download-options a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+
+   
+    color:black;
+    transition: background-color 0.3s;
+}
+
+.download-options a:hover {
+    background-color: #F8E6D0;
+}
+
+
+
+
+
+
+
+
+
+/* module  */
+
+/* .module {
+    display: flex;      
+    height: 500px;     
+}
+
+.left, .right {
+    flex: 1;           
+    height: 100%;       
+  
+}
+
+.left {
+    background-image: linear-gradient(#F8E6D0, #F8E6D0);
+}
+
+.right {
+    background-image: linear-gradient(#F8E6D0, #F8E6D0);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* video  */
+
+.video-container {
+    float: left;
+    margin-top: 60px;
+    margin-left: 40px;
+    width: 80%; 
+    margin-right: 20px; 
+    width: 1300px;
+}
+
+.video-container video {
+    width: 100%; 
+}
+
+
+
+
+
+
+
+
+
+
+/* company */
+
+.company-section {
+    background-image: linear-gradient(#F8E6D0, #F8E6D0);
+    display: flex;
+    background-color: #fff;
+    padding: 40px;
+    font-family: 'San Francisco', Arial, sans-serif;
+    height: 380px;
+
+}
+
+.company-left {
+    flex: 1;
+    background-image: linear-gradient(#F8E6D0, #F8E6D0);
+    /* background-color: #fff; */
+ }
+
+
+/* company -rounded-image picture */
+.rounded-image {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -160px;
+}
+
+
+.rounded-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.company-right {
+  position: absolute;
+  left: 680px;
+    flex: 1;
+    padding-left: 20px;
+    margin-top: -20px;
+   
+}
+
+.company-right h2 {
+    font-size: 34px;
+    font-weight: bolder;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: San Francisco;
+}
+
+.company-right p {
+    font-family: San Francisco;
+    width: 730px;
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+  
+}
+
+
+
+
+
+
+
+
+/* 初始化状态 */
+.floating-image {
+    opacity: 0;
+    transform: translateX(100%); 
+    transition: opacity 1.5s, transform 3.0s; 
+    position: absolute; 
+    right: 0; 
+}
+
+/* 动画效果 */
+.floating-image.animate {
+    opacity: 1;
+    transform: translateX(-100%); 
+
+}
+
+
+
+.floating-image {
+    position: absolute;
+    top: 1630px;  
+    left: 1200px;  
+    transform: translateX(-50%);  
+    width: 450px;  
+    height: auto;
+    z-index: 10;  
+}
+
+
+.floating-image2 {
+
+   
+
+    width: 400px;
+    margin-top: 250px;
+    left: 1100px;
+    
+    position: absolute; 
+    right: 0; 
+}
+
+
+
+
+
+/* 公司照片的动画 */
+.rounded-image {
+    border-radius: 15px;
+    overflow: hidden;
+    opacity: 0;  
+}
+
+.rounded-image.slide-in {
+    animation: slideFromLeft 1.2s forwards; 
+}
+
+
+
+
+
+
+
+
+
+/* 
+Pioneer Delivery Categories */
+.content-container {
+
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 300px;
+}
+
+.content-left, .content-right {
+    width: 50%;
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: -40px;
+   
+    
+    
+}
+
+.content-1-tit1 {
+   
+    font-family: San Francisco;
+    color: black;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 125px;
+    /* padding-top: 115px; */
+}
+
+
+
+
+.content-1-tit2 {
+    margin-left: 190px;
+    width: 400px;
+    text-align: center;
+    font-family: San Francisco;
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+    line-height: 36px; /* 调整行距 */
+    padding-top: 40px;
+}
+
+
+.content-1-con-summary {
+    padding-top: 35px;
+    margin: auto;
+    width: 80%; 
+    text-align: center; 
+}
+
+.content-1-con-summary p {
+    margin-bottom: 20px;
+    color: #777777;
+}
+
+a.content-1-con-li-a {
+    font-family: San Francisco;
+    color:#eb6538;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 14px;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+
+
+
+
+/* content2 */
+
+
+.content-2 {
+    background-image: linear-gradient(#F8E6D0 , #F8E6D0);
+    width: 100%;
+    display: flex;
+    /* margin: auto; */
+    /* padding-top: 0px; */
+    /* background-image: linear-gradient(#f29c52,#eb6538); */
+    height: 500px;
+    margin-top: -70px;
+    margin-bottom: -120px;
+}
+
+
+
+
+.content-2-left {
+    height: 500px;  
+    width: 100%;  
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 宽高比 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    padding-top: 40px;
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+}
+
+
+
+/* .content-2-right * {
+ 
+} */
+
+
+.content-2-right{
+
+
+    height: 500px;
+   
+    /* margin-top: -100px; */
+    padding-left:100px;
+
+   
+}
+
+
+p.content-2-right-p2 {
+    margin-top: 50px;
+    font-size: 34px;
+    font-weight: bold;
+    color: black;
+    padding-top: 17px;
+    line-height: 42px;
+}
+
+p.content-2-right-p3 {
+    color: black;
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 17px;
+}
+
+.content-2-right-ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 59px;
+}
+
+.content-2-right-li {
+    width: 248px;
+    line-height: 37px;
+}
+
+img.content-2-right-li-img {
+    display: inline-block;
+
+    vertical-align: text-bottom;
+}
+
+p.content-2-right-li-p {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* intruduce */
+
+.content-container{
+    height: 410px;
+
+}
+.content-left{
+
+    margin-top: 70px;
+}
+
+
+
+
+
+.content-3 {
+    height: 385px;
+    background: #f19750;
+    margin-top: 30px;
+}
+
+p.content-3-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 40px;
+    padding-top: 100px;
+}
+
+.content-3-ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+a.content-3-li {
+    display: inline-block;
+    background: #fff;
+    width: 170px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0px 24px;
+    border-radius: 10px;
+}
+
+img.content-3-li-left-img {
+    vertical-align: top;
+    top: 11px;
+}
+
+span.content-3-li-right {
+    font-size: 16px;
+}
+
+
+
+
+/* follow us */
+
+.follow-us {
+    font-size: 50px;
+    font-family: San Francisco;
+    font-weight: bolder;
+    background-color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    position: absolute;
+    margin-top: -40px;
+}
+
+
+
+.follow-us span {
+   
+/*     
+    margin-left: 150px; */
+}
+
+.icon-link {
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.icon-link:hover {
+    transform: scale(1.1);
+}
+
+.icon-link img {
+    margin-left: 40px;
+    height: 50px;  /* 可以根据需要调整图标大小 */
+    width: auto;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+/* follow us 动画特效 */
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.follow-us {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s; /* 调整动画时长 */
+}
+
+.show-follow-us {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot {
+    width: 100%;
+    /* margin-left: 180px; */
+}
+
+.foot-con {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    padding-top: 110px;
+    justify-content: left;
+}
+
+p.foot-li1-p {
+    font-size: 15px;
+    color: #777777;
+    line-height: 15px;
+    padding-top: 33px;
+}
+
+.foot-li2 {
+    padding-left: 50px;
+    width: 255px;
+}
+
+a.foot-li2-a {
+    display: block;
+    font-size: 13px;
+    line-height: 13px;
+    padding-bottom: 20px;
+}
+
+p.foot-li2-title {
+    font-size: 16px;
+    color: #323232;
+    font-weight: bold;
+    line-height: 16px;
+    padding-bottom: 35px;
+}
+
+.foot-li3 {
+    padding-left: 50px;
+    width: 255px;
+}
+
+p.foot-li3-title {
+    font-size: 16px;
+    color: #323232;
+    font-weight: bold;
+    line-height: 16px;
+    padding-bottom: 35px;
+}
+
+p.foot-li3-p {
+    display: block;
+    font-size: 13px;
+    line-height: 13px;
+    padding-bottom: 20px;
+}
+
+.foot-li4 {
+    padding-left: 50px;
+    width: 250px;
+}
+
+p.foot-li4-title {
+    font-size: 16px;
+    color: #323232;
+    font-weight: bold;
+    line-height: 16px;
+    padding-bottom: 35px;
+}
+
+.foot-li4-c {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-li4-c-1 {
+    width: 105px;
+    text-align: center;
+}
+
+img.foot-li4-c-1-img {
+    width: 105px;
+    height: 105px;
+    margin-bottom: 20px;
+}
+
+p.foot-li4-c-1-p {
+    font-size: 13px;
+    color: #777777;
+}
+.footer-copy {
+    /* position: absolute; */
+    /* bottom: 0px; */
+    margin-top: 65px;
+    width: 100%;
+    color: #777777;
+    text-align: center;
+    border-top: 1px solid #f1f1f1;
+    font-size: 14px;
+    line-height: 75px;
+}
+.title-move.title{
+    background: #ec6d3ce3;
+}
+.waves-block {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: -46px;
+    right: -205px;
+    z-index: 2;
+}
+
+.waves-block .waves {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffa563;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    border-radius: 50%;
+    background-clip: padding-box;
+    /* -webkit-animation: waves 3s ease-in-out infinite; */
+    animation: waves 3s ease-in-out infinite;
+}
+
+.waves-block .wave-1 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.waves-block .wave-2 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.waves-block .wave-3 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+
+
+
+    .adjusted-img {
+        width: 700px;
+        position: relative;
+        left: 130px;
+        right: -60px;  /* 往右调整的距离 */
+        top: 80px;    /* 往下调整的距离 */
+    }
+
+
+
+
+@keyframes waves {
+    0% {
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    50% {
+        opacity: 0.9;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    }
+    100% {
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+} 
+
+
+
+
+
+
+
+
+
+/* 动画效果 */
+/* Define the fadeIn animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Apply animation to the elements */
+.content-1-tit1, .content-1-tit2, .content-1-con-li-a {
+    opacity: 0; /* set initial opacity to 0 */
+    animation-name: fadeIn;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s; /* adjust as needed */
+    animation-fill-mode: forwards;
+}
+
+/* Stagger the start time of the animations for a smooth effect */
+.content-1-tit1 {
+    animation-delay: 0.5s; /* adjust as needed */
+}
+
+.content-1-tit2 {
+    animation-delay: 1s; /* adjust as needed */
+}
+
+.content-1-con-li-a {
+    animation-delay: 1.5s; /* adjust as needed */
+
+}
+
+
+/* banner page animation */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* from left side  */
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
